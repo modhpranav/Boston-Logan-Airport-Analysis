@@ -1,0 +1,50 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  background-color: #0000;
+}
+
+.fade-out {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 0;
+}
+
+/* Class for fading in */
+.fade-in {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+
+/* Initially hidden component */
+.hidden {
+  display: none;
+}
+
+
+@keyframes zoom {
+  0%, 100% {
+    background-size: 100%;
+  }
+  50% {
+    background-size: 120%;
+  }
+}
+
+.animate-zoom {
+  animation: zoom 5s infinite ease-in-out;
+}
+.get-fare-container {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  overflow: hidden; /* Ensures no internal scroll */
+}
+
+.get-fare-container iframe {
+  flex-grow: 1;
+  width: 100%;
+  height: 100%;
+  border: none; /* Removes border for a seamless look */
+}
