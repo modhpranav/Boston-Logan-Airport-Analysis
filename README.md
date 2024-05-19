@@ -1,38 +1,74 @@
-# Data Steward Pre-Screening Interview Preparation
+# Boston Airfare Chronicles: Interactive Insights from 2019 to 2024
 
-## Answers to Potential Interview Questions
+## Introduction
+The aviation industry faced unprecedented challenges with the onset of the COVID-19 pandemic. This project analyzes the impact of these disruptions and the subsequent recovery process at Boston Logan Airport from 2019 to 2024. It aims to provide insights into flight operations, passenger traffic, and fare structures, helping stakeholders in the aviation sector make informed decisions for future planning and sustainable growth.
 
-### 1. Do you have 2 years of experience profiling data and summarizing and reporting data quality metrics?
-Yes, I have extensive experience in profiling data and summarizing data quality metrics, notably from my role at Simform Solutions where I led the development of a data pipeline that incorporated data quality checks using SQL and visualization tools.
+## Features
+- **Interactive Charts**: Visualize flight volumes, passenger numbers, and fare dynamics over time.
+- **Narrative Elements**: Detailed descriptions and analyses of significant trends and events.
+- **Recovery Analysis**: Examination of the recovery phase, highlighting the return to normalcy and identifying contributing factors.
+- **Special Features**: 
+  - Year-wise analysis buttons.
+  - Animated transitions for a smooth user experience.
 
-### 2. Do you have 2 years of experience manipulating data accessed by APIs using scripting languages, including Python, R, Pipeline Pilot and/or ETL?
-Yes, my experience includes using Python and ETL tools like Snowflake for data manipulation accessed by APIs. For example, at Simform Solutions, I integrated Facebook Graph API with AWS and Apache Kafka for data processing tasks.
+## Installation
 
-### 3. Do you have 2 years of experience querying SQL and/or NoSQL databases, including Oracle and Google Cloud Platform using BigQuery, to deploy and leverage data analytics?
-Yes, I have more than two years of experience with both SQL and NoSQL databases, including Oracle and Google Cloud's BigQuery. My projects have often required sophisticated queries to leverage data analytics effectively.
+### Prerequisites
+- Node.js and npm installed on your machine
+- Git installed on your machine
 
-### 4. Do you have 2 years of experience using Cloud computing services, including AWS and/or Google Cloud, to perform big data analysis and democratize results?
-Yes, I am proficient in using AWS and Google Cloud for big data analysis, as demonstrated in my projects such as the Real-Time Transaction Fraud Detection System and the Image Processing and Exploration project.
+### Clone the Repository
+```bash
+git clone https://github.com/pranavmodh/boston-airfare-chronicles.git
+cd boston-airfare-chronicles
+```
 
-### 5. Do you have 2 years of experience identifying and resolving data quality issues using Pipeline Pilot protocols?
-My resume does not specifically mention the use of Pipeline Pilot protocols. However, I have significant experience in identifying and resolving data quality issues using similar technologies and methodologies.
+### Install Dependencies
+```bash
+npm install
+```
 
-### 6. Do you have 2 years of experience generating and delivering detailed technical reports by leveraging data visualization tools, including Tableau?
-While I extensively use visualization tools such as D3.js, Plotly, and PowerBI, my resume does not specifically list experience with Tableau. I am, however, skilled in delivering detailed technical reports using similar tools.
+## Usage
 
-### 7. Do you have 2 years of experience using APIs to automate and integrate data quality solutions?
-Yes, in my roles at Tntra IO and Simform Solutions, I extensively used APIs to automate data processing and integration tasks, which included enhancing data quality.
+### Run the Development Server
+```bash
+npm start
+```
+Open [http://localhost:3000](http://localhost:3000) in your browser to view the project.
 
-### 8. Do you have 2 years of experience creating technical documentation, including procedure guides, data dictionary definitions and database table and/or column descriptions, to enrich metadata and enable data discovery?
-Yes, during my tenure at Tntra IO and Simform Solutions, I was responsible for creating comprehensive technical documentation that enhanced metadata understanding and facilitated data discovery across projects.
+### Build for Production
+```bash
+npm run build
+```
+This will create an optimized production build in the `build` folder.
 
-## Additional Pre-Screening Round Questions
+## Project Structure
+- `src/`: Contains the source code of the project
+  - `components/`: Contains React components
+  - `data/`: Contains data files used in the project
+  - `styles/`: Contains CSS and styling files
+- `public/`: Contains public assets and the main `index.html` file
 
-1. What strategies do you employ for effective data governance in cross-functional teams?
-2. How do you ensure compliance with data privacy and security standards when designing data pipelines?
-3. Can you describe a situation where you had to troubleshoot a challenging data integration issue?
-4. What methods do you use to stay updated with the latest developments in data management technologies?
-5. How do you handle and prioritize multiple data projects simultaneously?
+## Technologies Used
+- **Frontend**: React, Tailwind CSS/DaisyUI, GSAP
+- **Data Visualization**: D3.js, Vega-lite
+- **Version Control**: GIT
+- **Build Tool**: Webpack
+- **Hosting**: Deployed on a web server (provide URL if available)
 
-## Conclusion
-These responses and questions are tailored to showcase your skills and preparedness for the Data Steward position, highlighting your technical abilities and problem-solving acumen.
+## Contributing
+Contributions are welcome! Please follow these steps to contribute:
+1. Fork the repository
+2. Create a new branch (`git checkout -b feature-branch`)
+3. Make your changes
+4. Commit your changes (`git commit -m 'Add some feature'`)
+5. Push to the branch (`git push origin feature-branch`)
+6. Open a pull request
+
+## License
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for more information.
+
+## References
+- Statistical datasets from the [Boston Airport website](https://www.massport.com/logan-airport/)
+- Average fare data from the [Bureau of Transportation](https://www.bts.gov/)
+- CPI data from the [US government](https://www.bls.gov/cpi/)
